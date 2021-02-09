@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Analog clock" />
+    <meta name="autors" content="Jose De La Cruz" />
+    <title>Analog clock</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <svg class="clock" viewBox="0 0 200 200">
+        <!-- circulo principal -->
+        <circle class="main-circle" cx="100" cy="100" r="95" />
+        
+        <!-- pequeño circulo en el centro donde inician las manecillas -->
+        <circle class="small_circle" cx="100" cy="100" r="5" />
+
+        <!-- posición de los números del reloj -->
+        <g class="clock-numbers">
+            <text x="95" y="23">12</text>
+            <text x="135" y="35">1</text>
+            <text x="165" y="65">2</text>
+            <text x="175" y="103">3</text>
+            <text x="165" y="141">4</text>
+            <text x="135" y="175">5</text>
+            <text x="97" y="185">6</text>
+            <text x="58" y="174">7</text>
+            <text x="28" y="143">8</text>
+            <text x="18" y="103">9</text>
+            <text x="23" y="67">10</text>
+            <text x="56" y="33">11</text>
+        </g>
+        
+        <!-- lineas blancas de los segundos, minutos y horas -->
+        <g id="white-lines" class="white-lines"></g>
+        
+        <!-- dirección de los punteros del reloj -->
+        <g class="clock-pointers">
+            <line id="clock-hour" class="clock-hour" x1="100" y1="100" x2="100" y2="55" />
+            <line id="clock-minute" class="clock-minute" x1="100" y1="100" x2="100" y2="45" />
+            <line id="clock-second" class="clock-second" x1="100" y1="100" x2="100" y2="42" />
+        </g>	
+
+        <!-- acerca de -->
+        <text id="about" class="about" x="85" y="145">[ acerca de ]</text>
+    </svg>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
