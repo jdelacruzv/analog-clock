@@ -8,7 +8,7 @@ body {
 	align-items: center;
 	background-color: #282829;
 	font-family: 'Open Sans', "Helvetica Neue", "Helvetica";
-	background-image: url("img/fondo.jfif");
+	background-image: url(../img/fondo.jfif);
 }
 
 .clock { 
