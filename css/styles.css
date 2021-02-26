@@ -17,7 +17,7 @@ body {
 	padding: 2rem;
 }
 
-.main-circle {
+.clock__circle-big {
 	/* rellena todo el círculo */
 	fill: #ecf0f1; 	
 	/* color del borde del círculo */
@@ -26,46 +26,45 @@ body {
 	stroke-width: 10;
 }
 
-.small_circle { 
+.clock__circle-small { 
 	fill: #282829;
 }
 
-.clock-numbers {
+.clock__numbers {
 	stroke: #282829;
 	font-size: 10px;
 }
 
-.white-lines .thick-line {
+.clock__lines .clock__lines--thick {
 	stroke: #282829;
 	stroke-width: 2.5;
 }
 
-.white-lines .thin-line {
+.clock__lines .clock__lines--thin {
 	stroke: #282829;
 	stroke-width: 1;
 }
 
-.clock-pointers {
+.clock__pointers {
 	/* redondea los extremos de la recta */
 	stroke-linecap: round;
+	stroke: #282829;
+	stroke-width: 1;
 }
 
-.clock-hour {
-    stroke: #282829;
+.clock__pointers--hh {
 	stroke-width: 4;
 }
 
-.clock-minute {
-    stroke: #282829;
+.clock__pointers--mm {
 	stroke-width: 2.5;
 }
 
-.clock-second {
+.clock__pointers--ss {
     stroke: #b11905;
-	stroke-width: 1;
 }
 
-.about {
+.clock__about {
 	fill: #0916d1;
 	font-size: 6px;
 	font-weight: bold;
