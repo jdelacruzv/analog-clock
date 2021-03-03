@@ -11,13 +11,9 @@
 </head>
 <body>
     <svg class="clock" viewBox="0 0 200 200">
-        <!-- circulo grande -->
         <circle class="clock__circle-big" cx="100" cy="100" r="95" />
-        
-        <!-- circulo pequeño en el centro donde inician las manecillas -->
         <circle class="clock__circle-small" cx="100" cy="100" r="5" />
 
-        <!-- posición de los números del reloj -->
         <g class="clock__numbers">
             <text x="95" y="23">12</text>
             <text x="56" y="35">11</text><text x="135" y="35">1</text>
@@ -28,15 +24,12 @@
             <text x="97" y="185">6</text>       
         </g>
         
-        <!-- lineas gris de los segundos, minutos y horas -->
         <g id="lines" class="clock__lines"></g>
         
-        <!-- dirección de los punteros del reloj -->
         <line id="hour" class="clock__pointers clock__pointers--hh" x1="100" y1="100" x2="100" y2="55" />
         <line id="minute" class="clock__pointers clock__pointers--mm" x1="100" y1="100" x2="100" y2="45" />
         <line id="second" class="clock__pointers clock__pointers--ss" x1="100" y1="100" x2="100" y2="42" />
         
-        <!-- acerca de -->
         <text id="about" class="clock__about" x="85" y="145">[ acerca de ]</text>
     </svg>
 
