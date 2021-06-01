@@ -12,8 +12,9 @@ about.addEventListener("click", windowAbout)
 
 /* Crea 60 líneas grises dentro del reloj dando la forma de un circulo (360 grados) */
 createWhiteLines = () => {
-	for(let i=1; i<=MAX_LINE; i++) {
-		// Crea un elemento del DOM con el espacio de nombres URI y el tipo de elemento, en este caso una línea
+  for(let i=1; i<=MAX_LINE; i++) {
+	  // Crea un elemento del DOM con el espacio de nombres URI y el tipo de elemento,
+    // en este caso una línea
 		let line = document.createElementNS("http://www.w3.org/2000/svg", "line")
 		line.setAttribute("id", `white-line-${i}`)
 		line.setAttribute("class", i % 5 === 0 ? "lines-thick" : "lines-thin")
