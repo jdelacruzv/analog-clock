@@ -7,7 +7,7 @@ let about = document.getElementById("about")
 const MAX_LINE = 60
 
 /* Muestra ventana acerca de */ 
-windowAbout = () => swal("José De La Cruz", "Desarrollador Javascript Frontend", "info")
+windowAbout = () => swal("José De La Cruz", "Desarrollador Web Frontend", "info")
 about.addEventListener("click", windowAbout)
 
 /* Crea 60 líneas grises dentro del reloj dando la forma de un circulo (360 grados) */
