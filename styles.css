@@ -2,19 +2,19 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-    height: 100vh;
+  height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #282829;
-	font-family: 'Open Sans', "Helvetica Neue", "Helvetica";
+	font-family: 'Open Sans', "Helvetica";
 	background-image: url("img/fondo.jpg");
 	background-size: 100% 100%;
 }
 
 .clock { 
-    height: 80vh;
-    width: 80vh;
+  height: 80vh;
+  width: 80vh;
 	padding: 2rem;
 }
 
@@ -36,12 +36,12 @@ body {
 	font-size: 10px;
 }
 
-.clock__lines .clock__lines--thick {
+.clock__lines .lines-thick {
 	stroke: #282829;
 	stroke-width: 2.5;
 }
 
-.clock__lines .clock__lines--thin {
+.clock__lines .lines-thin {
 	stroke: #282829;
 	stroke-width: 1;
 }
@@ -53,15 +53,15 @@ body {
 	stroke-width: 1;
 }
 
-.clock__pointers--hh {
+.clock__hh {
 	stroke-width: 4;
 }
 
-.clock__pointers--mm {
+.clock__mm {
 	stroke-width: 2.5;
 }
 
-.clock__pointers--ss {
+.clock__ss {
     stroke: #b11905;
 }
 

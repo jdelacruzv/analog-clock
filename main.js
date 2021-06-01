@@ -16,7 +16,7 @@ createWhiteLines = () => {
 		// Crea un elemento del DOM con el espacio de nombres URI y el tipo de elemento, en este caso una línea
 		let line = document.createElementNS("http://www.w3.org/2000/svg", "line")
 		line.setAttribute("id", `white-line-${i}`)
-		line.setAttribute("class", i % 5 === 0 ? "clock__lines--thick" : "clock__lines--thin")
+		line.setAttribute("class", i % 5 === 0 ? "lines-thick" : "lines-thin")
 		line.setAttribute("x1", "100")
 		line.setAttribute("y1", "30")
 		line.setAttribute("x2", "100")

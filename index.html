@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Analog clock" />
-    <meta name="autors" content="Jose De La Cruz" />
-    <title>Analog clock</title>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Analog clock" />
+  <meta name="autors" content="Jose De La Cruz" />
+  <title>Analog clock</title>
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <svg class="clock" viewBox="0 0 200 200">
-        <circle class="clock__circle-big" cx="100" cy="100" r="95" />
-        <circle class="clock__circle-small" cx="100" cy="100" r="5" />
+  <svg class="clock" viewBox="0 0 200 200">
+    <circle class="clock__circle-big" cx="100" cy="100" r="95" />
+    <circle class="clock__circle-small" cx="100" cy="100" r="5" />
+    
+    <g class="clock__numbers">
+      <text x="95" y="23">12</text>
+      <text x="56" y="35">11</text>
+      <text x="135" y="35">1</text>
+      <text x="23" y="65">10</text>
+      <text x="165" y="65">2</text>
+      <text x="18" y="103">9</text>
+      <text x="175" y="103">3</text>
+      <text x="28" y="141">8</text>
+      <text x="165" y="141">4</text>
+      <text x="58" y="175">7</text>
+      <text x="135" y="175">5</text>
+      <text x="97" y="185">6</text>
+    </g>
 
-        <g class="clock__numbers">
-            <text x="95" y="23">12</text>
-            <text x="56" y="35">11</text><text x="135" y="35">1</text>
-            <text x="23" y="65">10</text><text x="165" y="65">2</text>
-            <text x="18" y="103">9</text><text x="175" y="103">3</text>
-            <text x="28" y="141">8</text><text x="165" y="141">4</text>
-            <text x="58" y="175">7</text><text x="135" y="175">5</text>
-            <text x="97" y="185">6</text>       
-        </g>
-        
-        <g id="lines" class="clock__lines"></g>
-        
-        <line id="hour" class="clock__pointers clock__pointers--hh" x1="100" y1="100" x2="100" y2="55" />
-        <line id="minute" class="clock__pointers clock__pointers--mm" x1="100" y1="100" x2="100" y2="45" />
-        <line id="second" class="clock__pointers clock__pointers--ss" x1="100" y1="100" x2="100" y2="42" />
-        
-        <text id="about" class="clock__about" x="85" y="145">[ acerca de ]</text>
-    </svg>
+    <g id="lines" class="clock__lines"></g>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="main.js"></script>
+    <line id="hour" class="clock__pointers clock__hh" x1="100" y1="100" x2="100" y2="55" />
+    <line id="minute" class="clock__pointers clock__mm" x1="100" y1="100" x2="100" y2="45" />
+    <line id="second" class="clock__pointers clock__ss" x1="100" y1="100" x2="100" y2="42" />
+
+    <text id="about" class="clock__about" x="85" y="145">[ acerca de ]</text>
+  </svg>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
